@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://bunx2e3jxrfa8"]
+
+[ext_resource type="Script" uid="uid://cj21hkcfrmn7h" path="res://03 - Autoload/GUIDE/guide_input.gd" id="1_ni412"]
+[ext_resource type="Resource" uid="uid://7plm7c0r370y" path="res://03 - Autoload/GUIDE/Contexts/Dev/context_dev.tres" id="2_6fu6f"]
+[ext_resource type="Resource" uid="uid://ud00qoxyvskd" path="res://03 - Autoload/GUIDE/Contexts/Global/context_global.tres" id="2_d16n4"]
+[ext_resource type="Resource" uid="uid://cb6yiauffbme4" path="res://03 - Autoload/GUIDE/Contexts/Global/pause_game.tres" id="3_d16n4"]
+[ext_resource type="Resource" uid="uid://dk7xdslu224uc" path="res://03 - Autoload/GUIDE/Contexts/Player/context_player_movement.tres" id="4_n8xun"]
+[ext_resource type="Resource" uid="uid://qtwhh1o3uttn" path="res://03 - Autoload/GUIDE/Contexts/Dev/toggle_guide_debug.tres" id="5_715nd"]
+[ext_resource type="Resource" uid="uid://dtaqffq8683ou" path="res://03 - Autoload/GUIDE/Contexts/LookingAt/context_looking_at.tres" id="5_ya8q4"]
+[ext_resource type="Resource" uid="uid://odx80gn6w5mq" path="res://03 - Autoload/GUIDE/Contexts/Holding/context_holding.tres" id="6_3wo8s"]
+[ext_resource type="Resource" uid="uid://op4hs4nfgydt" path="res://03 - Autoload/GUIDE/Contexts/Player/player_move.tres" id="6_715nd"]
+[ext_resource type="Resource" uid="uid://d2grfkswfeyyd" path="res://03 - Autoload/GUIDE/Contexts/Holding/context_holding_pack.tres" id="7_ear44"]
+[ext_resource type="Resource" uid="uid://bj36pclu87ng0" path="res://03 - Autoload/GUIDE/Contexts/Player/player_jump.tres" id="8_j7aib"]
+[ext_resource type="Resource" uid="uid://ufv7h1v3l5k3" path="res://03 - Autoload/GUIDE/Contexts/PackOpened/context_opened_pack.tres" id="8_j361u"]
+[ext_resource type="Resource" uid="uid://d2a86cxbneror" path="res://03 - Autoload/GUIDE/Contexts/Player/move_free_camera.tres" id="9_br0b7"]
+[ext_resource type="Resource" uid="uid://bvccrfy0015ue" path="res://03 - Autoload/GUIDE/Contexts/Holding/context_holding_booster_box.tres" id="9_p5l1n"]
+[ext_resource type="Resource" uid="uid://bdunclot2ct11" path="res://03 - Autoload/GUIDE/Contexts/Focus/context_focus.tres" id="10_o08y1"]
+[ext_resource type="Resource" uid="uid://ceo5dn81uo705" path="res://03 - Autoload/GUIDE/Contexts/LookingAt/pick_up.tres" id="11_2xmg0"]
+[ext_resource type="Resource" uid="uid://jcxdde0kko5p" path="res://03 - Autoload/GUIDE/Contexts/Hand/context_hand_empty.tres" id="11_fu5pi"]
+[ext_resource type="Resource" uid="uid://0yj37h0e6hj3" path="res://03 - Autoload/GUIDE/Contexts/Binder/context_binder.tres" id="12_q612n"]
+[ext_resource type="Resource" uid="uid://bgxycrqyo7po2" path="res://03 - Autoload/GUIDE/Contexts/Holding/release_object.tres" id="13_jlj2d"]
+[ext_resource type="Resource" uid="uid://buc4exuar2hgv" path="res://03 - Autoload/GUIDE/Contexts/Build/context_build_mode.tres" id="13_ncu74"]
+[ext_resource type="Resource" uid="uid://c41g3cyymplat" path="res://03 - Autoload/GUIDE/Contexts/Build/context_build_positioning.tres" id="14_guagu"]
+[ext_resource type="Resource" uid="uid://dcm37rsavqdle" path="res://03 - Autoload/GUIDE/Contexts/LookingAt/primary_action.tres" id="14_jlj2d"]
+[ext_resource type="Resource" uid="uid://cwy51qehl4kvo" path="res://03 - Autoload/GUIDE/Contexts/Holding/context_holding_furniture_box.tres" id="15_plhna"]
+[ext_resource type="Resource" uid="uid://bao7n5kn6h2b6" path="res://03 - Autoload/GUIDE/Contexts/LookingAt/secondary_action.tres" id="15_t81ts"]
+[ext_resource type="Resource" uid="uid://b1b7828o7mqcf" path="res://03 - Autoload/GUIDE/Contexts/Holding/open_pack_action.tres" id="17_v6per"]
+[ext_resource type="Resource" uid="uid://dk7g0ucdwev5f" path="res://03 - Autoload/GUIDE/Contexts/PackOpened/next_card_action.tres" id="19_qbji1"]
+[ext_resource type="Resource" uid="uid://8ppwr1vclu6w" path="res://03 - Autoload/GUIDE/Contexts/Holding/open_booster_box.tres" id="21_px7k2"]
+[ext_resource type="Resource" uid="uid://b18xv46bbl06a" path="res://03 - Autoload/GUIDE/Contexts/Focus/exit_focus.tres" id="23_0sv7s"]
+[ext_resource type="Resource" uid="uid://gdx3q37l15q3" path="res://03 - Autoload/GUIDE/Contexts/Hand/open_personal_binder.tres" id="25_88ygc"]
+[ext_resource type="Resource" uid="uid://cinbxetrq5naf" path="res://03 - Autoload/GUIDE/Contexts/Hand/open_complete_collection.tres" id="26_q612n"]
+[ext_resource type="Resource" uid="uid://c18yapxb3wqiw" path="res://03 - Autoload/GUIDE/Contexts/Hand/open_master_collection.tres" id="27_asqyt"]
+[ext_resource type="Resource" uid="uid://de8c4ly0l6tll" path="res://03 - Autoload/GUIDE/Contexts/Binder/close_binder.tres" id="29_asqyt"]
+[ext_resource type="Resource" uid="uid://4muwhp8usr7s" path="res://03 - Autoload/GUIDE/Contexts/Hand/change_to_build_mode.tres" id="30_asqyt"]
+[ext_resource type="Resource" uid="uid://djvpwpopy2450" path="res://03 - Autoload/GUIDE/Contexts/Build/cancel_build_mode.tres" id="32_s34aj"]
+[ext_resource type="Resource" uid="uid://4eaj6xd5y5g" path="res://03 - Autoload/GUIDE/Contexts/Build/move_furniture.tres" id="33_mnlj3"]
+[ext_resource type="Resource" uid="uid://dm0rqngx7xc5f" path="res://03 - Autoload/GUIDE/Contexts/Build/box_up.tres" id="34_aelfs"]
+[ext_resource type="Resource" uid="uid://bti5pj1n1m7et" path="res://03 - Autoload/GUIDE/Contexts/Build/rotate_clockwise.tres" id="36_t60wh"]
+[ext_resource type="Resource" uid="uid://c6pdrpbh0el6q" path="res://03 - Autoload/GUIDE/Contexts/Build/rotate_counterclockwise.tres" id="37_plhna"]
+[ext_resource type="Resource" uid="uid://djgj0uugk0ycv" path="res://03 - Autoload/GUIDE/Contexts/Build/place_furniture.tres" id="38_hhgje"]
+[ext_resource type="Resource" uid="uid://4g4pjd3wt2bi" path="res://03 - Autoload/GUIDE/Contexts/Build/cancel_positioning.tres" id="39_v2y1k"]
+[ext_resource type="Resource" uid="uid://ct1h45a1s2fgt" path="res://03 - Autoload/GUIDE/Contexts/Holding/unbox.tres" id="41_hhgje"]
+[ext_resource type="Resource" uid="uid://8iysh8pqtym2" path="res://03 - Autoload/GUIDE/Contexts/Dev/toggle_in_game_debug.tres" id="42_v2y1k"]
+[ext_resource type="Resource" uid="uid://dy4iecevewgfi" path="res://03 - Autoload/GUIDE/Contexts/Dev/toggle_god_menu.tres" id="43_3imvm"]
+[ext_resource type="Resource" uid="uid://cc18nal2r5giv" path="res://03 - Autoload/GUIDE/Contexts/Dev/speed_up_time.tres" id="44_3imvm"]
+[ext_resource type="Resource" uid="uid://dtde6fiogfh6g" path="res://03 - Autoload/GUIDE/Contexts/Holding/throw_object.tres" id="45_sym3l"]
+[ext_resource type="Resource" uid="uid://36q6ofs3hmx0" path="res://03 - Autoload/GUIDE/Contexts/Player/crouch.tres" id="46_5dr6n"]
+
+[node name="GuideInput" type="Node" unique_id=138516493]
+script = ExtResource("1_ni412")
+context_dev = ExtResource("2_6fu6f")
+context_global = ExtResource("2_d16n4")
+context_player_movement = ExtResource("4_n8xun")
+context_looking_at = ExtResource("5_ya8q4")
+context_holding = ExtResource("6_3wo8s")
+context_holding_pack = ExtResource("7_ear44")
+context_card_pack_opened = ExtResource("8_j361u")
+context_holding_booster_box = ExtResource("9_p5l1n")
+context_focus = ExtResource("10_o08y1")
+context_hand_empty = ExtResource("11_fu5pi")
+context_binder = ExtResource("12_q612n")
+context_build_mode = ExtResource("13_ncu74")
+context_build_positioning = ExtResource("14_guagu")
+context_holding_furniture_box = ExtResource("15_plhna")
+pause_action = ExtResource("3_d16n4")
+player_movement_action = ExtResource("6_715nd")
+player_jump_action = ExtResource("8_j7aib")
+move_free_camera_action = ExtResource("9_br0b7")
+pick_up_action = ExtResource("11_2xmg0")
+release_object_action = ExtResource("13_jlj2d")
+primary_action = ExtResource("14_jlj2d")
+secondary_action = ExtResource("15_t81ts")
+open_pack_action = ExtResource("17_v6per")
+next_card_action = ExtResource("19_qbji1")
+open_booster_box_action = ExtResource("21_px7k2")
+exit_focus_action = ExtResource("23_0sv7s")
+open_personal_binder_action = ExtResource("25_88ygc")
+open_collection_complete_binder_action = ExtResource("26_q612n")
+open_collection_master_binder_action = ExtResource("27_asqyt")
+close_binder_action = ExtResource("29_asqyt")
+change_to_build_mode_action = ExtResource("30_asqyt")
+cancel_build_mode_action = ExtResource("32_s34aj")
+move_furniture_action = ExtResource("33_mnlj3")
+box_up_furniture_action = ExtResource("34_aelfs")
+rotate_clockwise_action = ExtResource("36_t60wh")
+rotate_counterclockwise_action = ExtResource("37_plhna")
+place_furniture_action = ExtResource("38_hhgje")
+cancel_positioning_action = ExtResource("39_v2y1k")
+unbox_action = ExtResource("41_hhgje")
+guide_debugger_action = ExtResource("5_715nd")
+toggle_in_game_debug = ExtResource("42_v2y1k")
+toggle_god_menu = ExtResource("43_3imvm")
+speed_up_time_action = ExtResource("44_3imvm")
+throw_object_action = ExtResource("45_sym3l")
+crouch_action = ExtResource("46_5dr6n")

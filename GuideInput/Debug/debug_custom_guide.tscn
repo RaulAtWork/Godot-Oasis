@@ -1,0 +1,99 @@
+[gd_scene format=3 uid="uid://dtf2nwu7nnp4w"]
+
+[ext_resource type="Script" uid="uid://b47sh4d71w500" path="res://03 - Autoload/GUIDE/Debug/guide_active_context.gd" id="1_1quc4"]
+[ext_resource type="Theme" uid="uid://dxg8kho74m5o8" path="res://03 - Autoload/GUIDE/Debug/guide_debug_theme.tres" id="1_5jvdf"]
+[ext_resource type="Script" uid="uid://cqfnsis3hhdrv" path="res://addons/guide/debugger/guide_debugger.gd" id="2_1quc4"]
+
+[node name="DebugCustomGuide" type="Control" unique_id=1552981139]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("1_5jvdf")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1396385503]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="GuideDebugger" type="MarginContainer" parent="VBoxContainer" unique_id=1902273258]
+layout_mode = 2
+mouse_filter = 2
+script = ExtResource("2_1quc4")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/GuideDebugger" unique_id=1790185548]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer/GuideDebugger/HBoxContainer" unique_id=1893715998]
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("1_1quc4")
+
+[node name="ActiveContext" type="Label" parent="VBoxContainer/GuideDebugger/HBoxContainer/VBoxContainer2" unique_id=815933189]
+layout_mode = 2
+text = "ACTIVE CONTEXTS"
+
+[node name="ContextContainer" type="VBoxContainer" parent="VBoxContainer/GuideDebugger/HBoxContainer/VBoxContainer2" unique_id=490667364]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Context1" type="Label" parent="VBoxContainer/GuideDebugger/HBoxContainer/VBoxContainer2/ContextContainer" unique_id=1912833716]
+layout_mode = 2
+text = "Context1"
+
+[node name="Context2" type="Label" parent="VBoxContainer/GuideDebugger/HBoxContainer/VBoxContainer2/ContextContainer" unique_id=1261348055]
+layout_mode = 2
+text = "Context 2"
+
+[node name="Context3" type="Label" parent="VBoxContainer/GuideDebugger/HBoxContainer/VBoxContainer2/ContextContainer" unique_id=1822800021]
+layout_mode = 2
+text = "Context 3"
+
+[node name="ActionsContainer" type="VBoxContainer" parent="VBoxContainer/GuideDebugger/HBoxContainer" unique_id=100276398]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label2" type="Label" parent="VBoxContainer/GuideDebugger/HBoxContainer/ActionsContainer" unique_id=62349562]
+layout_mode = 2
+text = "Actions"
+
+[node name="Actions" type="VBoxContainer" parent="VBoxContainer/GuideDebugger/HBoxContainer/ActionsContainer" unique_id=1618736903]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="InputsContainer" type="VBoxContainer" parent="VBoxContainer/GuideDebugger/HBoxContainer" unique_id=2043053361]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label3" type="Label" parent="VBoxContainer/GuideDebugger/HBoxContainer/InputsContainer" unique_id=152150144]
+layout_mode = 2
+text = "Inputs"
+
+[node name="Inputs" type="VBoxContainer" parent="VBoxContainer/GuideDebugger/HBoxContainer/InputsContainer" unique_id=1973756743]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="PriorityContainer" type="VBoxContainer" parent="VBoxContainer/GuideDebugger/HBoxContainer" unique_id=251116096]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label4" type="Label" parent="VBoxContainer/GuideDebugger/HBoxContainer/PriorityContainer" unique_id=1600567060]
+layout_mode = 2
+text = "Action Priority"
+
+[node name="Priorities" type="VBoxContainer" parent="VBoxContainer/GuideDebugger/HBoxContainer/PriorityContainer" unique_id=2078275867]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
