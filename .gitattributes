@@ -1,0 +1,21 @@
+# Sets all files that Git considers text files to have normalized line endings as LF (Unix-style). This helps avoid issues with inconsistent line endings across different operating systems 
+* text=auto eol=lf
+
+# Common godot files
+*.gd text eol=lf
+*.godot text eol=lf
+*.tres text eol=lf
+*.tscn text eol=lf
+*.cfg text eol=lf
+*.import text eol=lf
+
+# The above only works properly for Git 2.10+, so for older versions, we need to manually list the binary files we don't want modified.
+*.icns binary
+*.ico binary
+*.jar binary
+*.png binary
+*.ttf binary
+*.tza binary
+*.glb binary
+*.mp3 binary
+*.wav binary
